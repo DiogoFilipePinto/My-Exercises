@@ -1,0 +1,38 @@
+<?xml version="1.0" ?>
+<project name="MyFirstAntExperience" default="run">
+
+    <target name="init" description="creates and initializes ant variables">
+        <property name="project.name" value="HelloWorld"/>
+        <property name="build.dir" value="build"/>
+        <property name="classes.dir" value="classes"/>
+        <property name="main.class" value="io.codeforall.fanstatics.Sandbox"/>
+        <property name="src.dir" value="src"/>
+    </target>
+
+    <target name="clean" description="Deletes the build folder and all its created files">
+        <delete dir="${build.dir}"/>
+    </target>
+
+    <target name="prepare" description="Creates the build and classes directory" depends="init">
+        <mkdir dir="${build.dir}/${classes.dir}"/>
+    </target>
+
+    <target name="compile" description="Compiles the source code" depends="prepare">
+        <javac srcdir="${src.dir}" destdir="${build.dir}/${classes.dir}"/>
+    </target>
+
+    <target name="jarfile" description="Archives and creates the jar file" depends="compile">
+        <jar destfile="${build.dir}/${project.name}.jar" basedir="${build.dir}/${classes.dir}">
+            <manifest>
+                <attribute name="Main-Class" value="${main.class}"/>
+            </manifest>
+        </jar>
+    </target>
+
+    <target name="run" description="Runs the application" depends="jarfile">
+        <java jar="${build.dir}/${project.name}.jar" fork="true">
+            <arg value="mekie" />
+        </java>
+    </target>
+
+</project>
