@@ -37,11 +37,6 @@ public class RecyclableDemon extends Genie {
      */
     @Override
     public String toString() {
-
-        StringBuilder stringBuilder = new StringBuilder("Recyclable demon has granted ");
-        stringBuilder.append(getGrantedWishes());
-        stringBuilder.append(" wishes.");
-
-        return recycled ? "Demon has been recycled" : stringBuilder.toString();
+        return recycled ? "Demon has been recycled" : "Recyclable demon has granted " + getGrantedWishes() + " wishes.";
     }
 }

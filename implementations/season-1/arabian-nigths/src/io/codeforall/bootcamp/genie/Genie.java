@@ -66,18 +66,7 @@ public class Genie {
      * @return the current Genie status
      */
     public String toString() {
-
-        StringBuilder stringBuilder = new StringBuilder();
-
-        stringBuilder.append(this.getClass().getSimpleName());
-        stringBuilder.append(" has granted ");
-        stringBuilder.append(getGrantedWishes());
-        stringBuilder.append(" and still has ");
-        stringBuilder.append(getRemainingWishes());
-        stringBuilder.append(" to grant.");
-
-        return stringBuilder.toString();
-
+        return "Friendly Genie has granted " + getGrantedWishes() + " wishes and still has " + getRemainingWishes() + " wishes to grant.";
     };
 
 }
