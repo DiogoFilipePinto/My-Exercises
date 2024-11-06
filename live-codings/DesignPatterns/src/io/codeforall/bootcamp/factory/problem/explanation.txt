@@ -1,0 +1,22 @@
+Author note: Got lazy implementing all the problems and factory is pretty
+straightforward and doesn't need a bigger application (I guess...)
+
+Got the following explanation from ChatGPT:
+
+1. Complex object creation: When the process of creating an object involves complex logic, such as
+initialization with specific parameters or dependencies, the Factory Pattern encapsulates this logic
+within a factory method or class. This simplifies the client code, as it only needs to call a
+factory method without worrying about the intricate details of object creation.
+
+2. Decoupling of client code and concrete classes: By using factories to create objects, client
+code does not need to directly instantiate concrete classes. This reduces dependencies and improves
+flexibility, as changes to the concrete classes (such as adding new subclasses or modifying
+existing ones) do not require changes to the client code.
+
+3. Dynamic object creation: Factories can dynamically determine which class to instantiate based on
+runtime conditions, configuration settings, or input parameters. This allows for flexible object
+creation strategies and runtime polymorphism.
+
+4. Object creation based on conditions: In some cases, the type of object needed may depend on
+certain conditions or parameters. Factories can encapsulate the logic to choose the appropriate
+class based on these conditions, providing a clean and maintainable way to handle such scenarios.
