@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <bean id="Mafalda" class="io.codeforall.fanstatics.Cadet">
+        <constructor-arg name="name" value="Mafalda"/>
+        <property name="contacts">
+            <map>
+                <entry key="Batman" value="3243242"/>
+                <entry key="Pai Natal" value="432432"/>
+                <entry key="Grumpy Genie" value="2343242"/>
+            </map>
+        </property>
+    </bean>
+
+    <bean id="Jorge" class="io.codeforall.fanstatics.Cadet">
+        <constructor-arg name="name" value="Jorge"/>
+        <property name="friend" ref="Mafalda"/>
+    </bean>
+
+    <bean id="Gustavo" class="io.codeforall.fanstatics.Cadet">
+        <constructor-arg name="name" value="Gustavo"/>
+        <property name="friend" ref="Mafalda"/>
+    </bean>
+
+</beans>
