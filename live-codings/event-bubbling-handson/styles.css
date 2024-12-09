@@ -1,0 +1,44 @@
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100vh;
+    margin: 0px;
+}
+
+div{
+    background-color: white;
+}
+/* Styles for the Grandparent */
+#grandparent {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border: 3px solid slateblue;
+    height: 80%;
+    width: 60%;
+}
+
+/* Styles for the Parent */
+#parent {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border: 3px solid red;
+    height: 80%;
+    width: 80%;
+}
+
+/* Styles for the Child */
+#child {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border: 3px solid green;
+    height: 80%;
+    width: 80%;
+}
