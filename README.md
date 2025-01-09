@@ -1,9 +1,14 @@
-# Code for All_ Classroom Repo
+# My Exercises
+This repository contains exercises I completed during my Code Cadet training at Code for All_. It showcases my progress and learning in Java and various programming concepts.
 
-A place where Code for All_ implementations go! Check out the latest fancy algorithms and hidden gems of Java here!
+Exercises Included Basic Programming: Basic programming concepts and 
+syntax. Data Structures: Implementations and algorithms using arrays, 
+lists, trees, etc. Web Development: Projects focusing on Java so far. 
+Technologies Used 
+Java, JavaScript, HTML, CSS
 
-## Want to contribute?
+Contributing
+Contributions are welcome! If you have suggestions for improvements or additional exercises, please fork the repository and submit a pull request.
 
-You can't. This is a READ-ONLY repository. All you need to worry about here is `git pull` whenever the repo is updated.
-Remember, never work in the local repository that points to this repo :)
+Feel free to explore and learn from my work!
 
